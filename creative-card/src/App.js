@@ -5,8 +5,8 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-          Creative Card
-          Order a special card.
+          <h1>Creative Card</h1>
+          <p>Order a special card.</p>
       </header>
     </div>
   );
