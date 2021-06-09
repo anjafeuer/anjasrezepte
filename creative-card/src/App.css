@@ -2,9 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  float: left;
 }
 
 .App-header {
@@ -20,6 +19,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+
+}
+
+.grid-item{
+  padding: 20px;
 }
 
 
