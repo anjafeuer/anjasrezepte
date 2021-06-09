@@ -1,2 +1,2 @@
-# creative-card
-webiste for ordering creative cards
+# Creative Card
+This is a mockup-website for ordering selfmade cards.
