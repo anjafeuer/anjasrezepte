@@ -1,8 +1,9 @@
 import './App.css';
-import './Nav.js';
 import {AppBar, Theme, Toolbar} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 import {Main} from "./Main";
+import React from "react";
+
 
 const useStyles = makeStyles((theme: Theme) => ({
     toolbar: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         gridTemplateColumns: 'auto',
         justifyContent: 'center',
         justifyItems: 'space-between',
-        backgroundColor: '#c96812',
+        backgroundColor: '#0390fc',
         fontFamily: 'Helvetica',
     },
     main: {
@@ -28,7 +29,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 export const App = () => {
     const classes = useStyles()
-
   return (
     <div className="App">
 
@@ -36,16 +36,14 @@ export const App = () => {
               <Toolbar className={classes.toolbar}>
                   <div className="grid-container">
                       <div >
-                          <img src="logo_cc.PNG" width= "80px" height="80px" alt="logo"/>
+                          <img src="logo.png" width= "80px" height="80px" alt="logo"/>
                       </div>
                   </div>
 
               </Toolbar>
           </AppBar>
 
-
           <div className={classes.main}>
-
 
               <Main/>
           </div>

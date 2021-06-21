@@ -6,10 +6,9 @@ import MailIcon from '@material-ui/icons/Mail'
 import CakeIcon from '@material-ui/icons/Cake'
 import PersonIcon from '@material-ui/icons/Person'
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import {App} from './App'
-import {Contact} from './Contact'
-import {AboutMe} from './AboutMe'
-import {Occasion} from './Occasion'
+import {Contact} from '../contact/Contact'
+import {AboutMe} from '../aboutme/AboutMe'
+import {Occasion} from '../occasion/Occasion'
 import {Home} from './Home'
 
 const useStyles = makeStyles({
@@ -18,10 +17,10 @@ const useStyles = makeStyles({
         position: 'fixed',
         bottom: 0,
         left: 0,
-        backgroundColor: '#c96812'
+        backgroundColor: '#0390fc'
     },
     icon: {
-        color: 'white'
+        color: 'white',
     }
 })
 
