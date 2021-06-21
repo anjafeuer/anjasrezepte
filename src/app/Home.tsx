@@ -28,7 +28,7 @@ export function Home(){
     return (
         <div className={classes.root}>
             <div className={classes.griditem}>
-                <p>This is Creative Card - Feel free to be inspired.</p>
+                <p>This is Creative Cards - Feel free to be inspired.</p>
             </div>
 
     <div className={classes.gridcontainer}>

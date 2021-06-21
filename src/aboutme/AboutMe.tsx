@@ -6,11 +6,10 @@ const useStyles = makeStyles({
     card: {
         backgroundColor: '#ebf1f5',
         width: '300px',
-        alignItems: 'left',
-        padding: '10px'
+        padding: '5px'
     },
         input:{
-        padding: '10px',
+        padding: '20px',
 
         },
     })
@@ -23,8 +22,6 @@ export function AboutMe(){
                 <Card className={classes.card}>
                     Hey my name is Anja. I am currently enrolled as a Medical Informatics Student.
                 </Card>
-
-
             </div>
 
             <div className={classes.input}>

@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme: Theme) => ({
         backgroundColor: '#0390fc',
         fontFamily: 'Helvetica',
     },
+    title:{
+        fontFamily:'Lucida Handwriting',
+        fontSize: '25px',
+    },
     main: {
             display: 'grid',
             width: '100vw',
@@ -35,16 +39,16 @@ export const App = () => {
           <AppBar>
               <Toolbar className={classes.toolbar}>
                   <div className="grid-container">
-                      <div >
-                          <img src="logo.png" width= "80px" height="80px" alt="logo"/>
-                      </div>
+                      <p className={classes.title}>Creative Cards</p>
+                      {/*<div >*/}
+                      {/*    <img src="logo.png" width= "80px" height="80px" alt="logo"/>*/}
+                      {/*</div>*/}
                   </div>
 
               </Toolbar>
           </AppBar>
 
           <div className={classes.main}>
-
               <Main/>
           </div>
     </div>
