@@ -8,17 +8,16 @@ const useStyles = makeStyles({
         color: 'black',
         fontWeight: 'bold'
     },
-    send:{
-        justifyItems: 'center'
-    },
+
     gridcontainer:{
             display: 'grid',
-            gridTemplateColumns: 'auto auto ',
+            gridTemplateColumns: 'auto',
             padding: '10px',
             justifyItems: 'center',
         },
     griditem:{
-            padding: '20px',
+            padding: '10px',
+            justifyItems: 'center',
     }})
 
 export function Contact(){
@@ -26,30 +25,30 @@ export function Contact(){
     return (
         <div className={classes.gridcontainer}>
             <div className={classes.griditem}>
-                <p className={classes.title}>Please enter your contact details:</p>
+                <p className={classes.title}>Please enter your email:</p>
 
             </div>
             <div className={classes.griditem}>
                 <form noValidate autoComplete="off">
-                    <TextField id="outlined-basic" label="Adress" variant="outlined" />
+                    <TextField id="outlined-basic" label="email" variant="outlined" />
                 </form>
             </div>
 
            <div className={classes.griditem}>
-               <p className={classes.title}>Please enter your request.</p>
+               <p className={classes.title}>Please enter your request:</p>
            </div>
             <div className={classes.griditem}>
                 <form noValidate autoComplete="off">
                     <TextField id="outlined-basic" label="Request" variant="outlined" />
                 </form>
             </div>
-            <div className={classes.send}>
-             <Button variant="contained" color="primary">
-                Send
-             </Button>
-            </div>
-
-
+            <div className={classes.griditem}>
+                <Button variant="contained" color="primary">
+                    Send Request
+                </Button>
         </div>
+
+    </div>
+
     )
 }

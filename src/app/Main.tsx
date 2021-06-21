@@ -21,6 +21,7 @@ const useStyles = makeStyles({
     },
     icon: {
         color: 'white',
+        fontFamily: 'Helvetica',
     }
 })
 
@@ -46,7 +47,7 @@ export const Main = () => {
                         showLabels={true}
                     >
                         <BottomNavigationAction className={classes.icon} label="Home" icon={<HomeIcon />} value={'home'} />
-                        <BottomNavigationAction className={classes.icon} label="Ocassions" icon={<CakeIcon/>} value={'oaccasion'}/>
+                        <BottomNavigationAction className={classes.icon} label="Ocassion" icon={<CakeIcon/>} value={'occasion'}/>
                         <BottomNavigationAction className={classes.icon} label="About Me" icon={<PersonIcon />} value={'aboutme'} />
                         <BottomNavigationAction className={classes.icon} label="Contact" icon={<MailIcon />} value={'contact'}/>
                     </BottomNavigation>
