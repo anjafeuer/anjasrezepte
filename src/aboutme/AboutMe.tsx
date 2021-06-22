@@ -1,6 +1,7 @@
 import * as React from "react";
 import {Card} from "@material-ui/core";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import '../contact/Contact.tsx';
 
 const useStyles = makeStyles({
     card: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles({
 export function AboutMe(){
     const classes = useStyles()
         return (
+
         <div>
             <div className={classes.input}>
                 <Card className={classes.card}>
@@ -48,13 +50,10 @@ export function AboutMe(){
 
             <div className={classes.input}>
                 <Card className={classes.card}>
-                    If you like one of my paintings feel free to contact me under the <a href="/Occasion.tsx" >
-                   contact formular.</a>
+                    If you like one of my paintings feel free to contact me under the
+                        <a href="../contact/Contact.tsx"> contact formular.</a>
                 </Card>
             </div>
-
-
-
         </div>
     )
 }

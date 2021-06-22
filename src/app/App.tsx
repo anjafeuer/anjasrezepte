@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     title:{
         fontFamily:'Lucida Handwriting',
         fontSize: '25px',
+
     },
     main: {
             display: 'grid',

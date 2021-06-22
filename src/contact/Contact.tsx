@@ -39,7 +39,7 @@ export function Contact(){
            </div>
             <div className={classes.griditem}>
                 <form noValidate autoComplete="off">
-                    <TextField id="outlined-basic" label="Request" variant="outlined" />
+                    <TextField id="outlined-basic" label="request" variant="outlined" />
                 </form>
             </div>
             <div className={classes.griditem}>

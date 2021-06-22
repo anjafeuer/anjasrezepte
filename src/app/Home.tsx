@@ -6,11 +6,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     root:{
         position: 'relative',
         fontFamily: 'Helvetica',
-
     },
     gridcontainer:{
             display: 'grid',
-            gridTemplateColumns: 'auto auto auto auto auto',
+            gridTemplateColumns: 'auto auto auto auto',
             padding: '5px',
             justifyItems: 'center',
         },
@@ -18,7 +17,11 @@ const useStyles = makeStyles((theme: Theme) => ({
             display: 'grid',
             padding: '20px',
             fontWeight: 'bold',
+            margin: theme.spacing(2),
         },
+    note:{
+      fontWeight: 'bold',
+    },
 
 
 }))
@@ -27,7 +30,7 @@ export function Home(){
     const classes = useStyles()
     return (
         <div className={classes.root}>
-            <div className={classes.griditem}>
+            <div className={classes.note}>
                 <p>This is Creative Cards - Feel free to be inspired.</p>
             </div>
 
