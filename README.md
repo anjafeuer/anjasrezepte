@@ -1,6 +1,7 @@
 # Creative Card
-This is an online-portfolio about creative cards.
-![mockup](https://user-images.githubusercontent.com/83225362/122224042-0350e380-ceb4-11eb-9432-72c6ce7b6ab5.PNG)
+This is an online-portfolio about creative cards. No real ordering here. The website is in process.
+![image](https://user-images.githubusercontent.com/83225362/122873014-91ecb700-d331-11eb-8182-7dbf9d9fa2ff.png)
+
 
 
 
