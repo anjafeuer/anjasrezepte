@@ -21,7 +21,7 @@ const useStyles = makeStyles({
         position: 'fixed',
         bottom: 0,
         left: 0,
-        backgroundColor: '#7f79d1'
+        backgroundColor: '#214fa5'
     },
     icon: {
         color: 'white',

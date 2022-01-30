@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         gridTemplateColumns: 'auto',
         justifyContent: 'center',
         justifyItems: 'space-between',
-        backgroundColor: '#7f79d1',
+        backgroundColor: '#214fa5',
         fontFamily: 'Helvetica',
     },
     title:{
