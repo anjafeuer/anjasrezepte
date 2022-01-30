@@ -1,3 +1,4 @@
-.MuiBottomNavigationAction{
-    color: darkred;
+
+.MuiBottomNavigationAction-root.Mui-selected {
+    color: lightgrey;
 }

@@ -42,7 +42,7 @@ export const App = () => {
                   <div className="grid-container">
                       <p className={classes.title}>Anja's Rezepte</p>
                       {/*<div >*/}
-                      {/*    <img src="logo.png" width= "80px" height="80px" alt="logo"/>*/}
+                      {/*    <img src="logorezepte.png" width= "80px" height="80px" alt="logo"/>*/}
                       {/*</div>*/}
                   </div>
 
