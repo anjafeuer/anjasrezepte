@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         gridTemplateColumns: 'auto',
         justifyContent: 'center',
         justifyItems: 'space-between',
-        backgroundColor: '#0390fc',
+        backgroundColor: '#7f79d1',
         fontFamily: 'Helvetica',
     },
     title:{
@@ -40,7 +40,7 @@ export const App = () => {
           <AppBar>
               <Toolbar className={classes.toolbar}>
                   <div className="grid-container">
-                      <p className={classes.title}>Creative Cards</p>
+                      <p className={classes.title}>Anja's Rezepte</p>
                       {/*<div >*/}
                       {/*    <img src="logo.png" width= "80px" height="80px" alt="logo"/>*/}
                       {/*</div>*/}

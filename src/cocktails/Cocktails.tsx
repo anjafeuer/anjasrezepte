@@ -8,24 +8,24 @@ const useStyles = makeStyles({
         fontFamily: 'Helvetica',
     },
     note:{
-      fontWeight: 'bold',
+        fontWeight: 'bold',
     },
 
 })
 
-export function Home(){
+export function Cocktails(){
     const classes = useStyles()
     return (
         <div className={classes.root}>
             <div className={classes.note}>
-                <p>KOCHEN. BACKEN. GENIESSEN.</p>
+                <p>A little party never killed nobody.</p>
             </div>
             <div>
-                <p>Hinweis: Dies ist eine Website in Entwicklung.</p>
+                <p>Cosmopolitan.</p>
             </div>
 
 
 
-</div>
+        </div>
     )
 }

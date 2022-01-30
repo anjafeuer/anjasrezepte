@@ -2,14 +2,18 @@ import React, {useState} from 'react'
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import HomeIcon from '@material-ui/icons/Home'
 import BottomNavigation from '@material-ui/core/BottomNavigation'
-import MailIcon from '@material-ui/icons/Mail'
 import CakeIcon from '@material-ui/icons/Cake'
-import PersonIcon from '@material-ui/icons/Person'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import {Contact} from '../contact/Contact'
-import {AboutMe} from '../aboutme/AboutMe'
-import {Occasion} from '../occasion/Occasion'
+import {Cooking} from '../cook/Cooking'
+import {Baking} from '../bake/Baking'
+import {Cocktails} from '../cocktails/Cocktails'
+import {InsightPics} from '../impressions/InsightPics'
 import {Home} from './Home'
+import RestaurantIcon from "@material-ui/icons/Restaurant";
+import LocalBarIcon from "@material-ui/icons/LocalBar";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
+import MailIcon from "@material-ui/icons/Mail";
 
 const useStyles = makeStyles({
     bottomNav: {
@@ -17,7 +21,7 @@ const useStyles = makeStyles({
         position: 'fixed',
         bottom: 0,
         left: 0,
-        backgroundColor: '#0390fc'
+        backgroundColor: '#7f79d1'
     },
     icon: {
         color: 'white',
@@ -25,7 +29,7 @@ const useStyles = makeStyles({
     }
 })
 
-type Tab = 'home' | 'occasion' | 'aboutme' | 'contact'
+type Tab = 'home' | 'occasion' | 'aboutme' |'cocktails' | 'insight' | 'contact'
 
 
 export const Main = () => {
@@ -34,10 +38,12 @@ export const Main = () => {
 
             return (
                 <div>
-                    {navTab === 'home' && <Home />}
-                    {navTab === 'occasion' && <Occasion />}
-                    {navTab === 'aboutme' && <AboutMe/>}
-                    {navTab === 'contact' && <Contact />}
+                    {navTab === 'home' && <Home/>}
+                    {navTab === 'occasion' && <Baking/>}
+                    {navTab === 'aboutme' && <Cooking/>}
+                    {navTab === 'cocktails' && <Cocktails/>}
+                    {navTab === 'insight' && <InsightPics/>}
+                    {navTab === 'contact' && <Contact/>}
                     <BottomNavigation
                         className={classes.bottomNav}
                         value={navTab}
@@ -47,9 +53,11 @@ export const Main = () => {
                         showLabels={true}
                     >
                         <BottomNavigationAction className={classes.icon} label="Home" icon={<HomeIcon />} value={'home'} />
-                        <BottomNavigationAction className={classes.icon} label="Ocassion" icon={<CakeIcon/>} value={'occasion'}/>
-                        <BottomNavigationAction className={classes.icon} label="About Me" icon={<PersonIcon />} value={'aboutme'} />
-                        <BottomNavigationAction className={classes.icon} label="Contact" icon={<MailIcon />} value={'contact'}/>
+                        <BottomNavigationAction className={classes.icon} label="Backen" icon={<CakeIcon/>} value={'occasion'}/>
+                        <BottomNavigationAction className={classes.icon} label="Kochen" icon={<RestaurantIcon/>} value={'aboutme'} />
+                        <BottomNavigationAction className={classes.icon} label="Cocktails" icon={<LocalBarIcon/>} value={'cocktails'}/>
+                        <BottomNavigationAction className={classes.icon} label="Eindrücke" icon={<MenuBookIcon/>} value={'insight'}/>
+                        <BottomNavigationAction className={classes.icon} label="Kontakt" icon={<MailIcon/>} value={'contact'}/>
                     </BottomNavigation>
                 </div>
             )
