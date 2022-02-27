@@ -29,7 +29,7 @@ const useStyles = makeStyles({
     }
 })
 
-type Tab = 'home' | 'occasion' | 'aboutme' |'cocktails' | 'insight' | 'contact'
+type Tab = 'home' | 'occasion' | 'aboutme' |'cocktails'
 
 
 export const Main = () => {
@@ -42,8 +42,6 @@ export const Main = () => {
                     {navTab === 'occasion' && <Baking/>}
                     {navTab === 'aboutme' && <Cooking/>}
                     {navTab === 'cocktails' && <Cocktails/>}
-                    {navTab === 'insight' && <InsightPics/>}
-                    {navTab === 'contact' && <Contact/>}
                     <BottomNavigation
                         className={classes.bottomNav}
                         value={navTab}
@@ -56,8 +54,8 @@ export const Main = () => {
                         <BottomNavigationAction className={classes.icon} label="Backen" icon={<CakeIcon/>} value={'occasion'}/>
                         <BottomNavigationAction className={classes.icon} label="Kochen" icon={<RestaurantIcon/>} value={'aboutme'} />
                         <BottomNavigationAction className={classes.icon} label="Cocktails" icon={<LocalBarIcon/>} value={'cocktails'}/>
-                        <BottomNavigationAction className={classes.icon} label="Eindrücke" icon={<MenuBookIcon/>} value={'insight'}/>
-                        <BottomNavigationAction className={classes.icon} label="Kontakt" icon={<MailIcon/>} value={'contact'}/>
+                        {/*<BottomNavigationAction className={classes.icon} label="Eindrücke" icon={<MenuBookIcon/>} value={'insight'}/>*/}
+                        {/*<BottomNavigationAction className={classes.icon} label="Kontakt" icon={<MailIcon/>} value={'contact'}/>*/}
                     </BottomNavigation>
                 </div>
             )

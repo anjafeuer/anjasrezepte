@@ -40,7 +40,7 @@ export const App = () => {
           <AppBar>
               <Toolbar className={classes.toolbar}>
                   <div className="grid-container">
-                      <p className={classes.title}>Anja's Rezepte</p>
+                      <p className={classes.title}>Rezeptsammlung</p>
                       {/*<div >*/}
                       {/*    <img src="logorezepte.png" width= "80px" height="80px" alt="logo"/>*/}
                       {/*</div>*/}
