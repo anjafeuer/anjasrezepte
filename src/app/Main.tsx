@@ -1,19 +1,15 @@
-import React, {useState} from 'react'
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
-import HomeIcon from '@material-ui/icons/Home'
-import BottomNavigation from '@material-ui/core/BottomNavigation'
-import CakeIcon from '@material-ui/icons/Cake'
+import * as React from "react";
+import BottomNavigation from "@mui/material/BottomNavigation"
+import BottomNavigationAction from "@mui/material/BottomNavigationAction"
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import {Contact} from '../contact/Contact'
 import {Cooking} from '../cook/Cooking'
 import {Baking} from '../bake/Baking'
 import {Cocktails} from '../cocktails/Cocktails'
-import {InsightPics} from '../impressions/InsightPics'
 import {Home} from './Home'
-import RestaurantIcon from "@material-ui/icons/Restaurant";
-import LocalBarIcon from "@material-ui/icons/LocalBar";
-import MenuBookIcon from "@material-ui/icons/MenuBook";
-import MailIcon from "@material-ui/icons/Mail";
+import HomeIcon from '@mui/icons-material/Home'
+import CakeIcon from '@mui/icons-material/Cake'
+import RestaurantIcon from "@mui/icons-material/Restaurant"
+import LocalBarIcon from "@mui/icons-material/LocalBar"
 
 const useStyles = makeStyles({
     bottomNav: {
@@ -21,7 +17,7 @@ const useStyles = makeStyles({
         position: 'fixed',
         bottom: 0,
         left: 0,
-        backgroundColor: '#214fa5'
+        backgroundColor: '#1c8c6b'
     },
     icon: {
         color: 'white',
@@ -29,34 +25,42 @@ const useStyles = makeStyles({
     }
 })
 
-type Tab = 'home' | 'occasion' | 'aboutme' |'cocktails'
-
+type Tab = 'home' | 'occasion' | 'cooking' |'cocktails'
 
 export const Main = () => {
     const classes = useStyles()
-    const [navTab, setNavTab] = useState<Tab>('home')
+    const [navTab, setNavTab] = React.useState('home');
 
             return (
                 <div>
                     {navTab === 'home' && <Home/>}
                     {navTab === 'occasion' && <Baking/>}
-                    {navTab === 'aboutme' && <Cooking/>}
+                    {navTab === 'cooking' && <Cooking/>}
                     {navTab === 'cocktails' && <Cocktails/>}
+
                     <BottomNavigation
+                        showLabels
                         className={classes.bottomNav}
                         value={navTab}
                         onChange={(event, newValue) => {
-                            setNavTab(newValue)
+                            setNavTab(newValue);
                         }}
-                        showLabels={true}
+                            sx={{
+                                "& .Mui-selected, .Mui-selected > svg": {
+                                    color: "#ffffff",
+                                    fontWeight: "bold"
+                                },
+                                "& .MuiBottomNavigationAction-root": {
+                                    color: "#0f523e",
+                                    backgroundColor: "#e6b1c0"
+                                }
+                        }}
                     >
                         <BottomNavigationAction className={classes.icon} label="Home" icon={<HomeIcon />} value={'home'} />
                         <BottomNavigationAction className={classes.icon} label="Backen" icon={<CakeIcon/>} value={'occasion'}/>
-                        <BottomNavigationAction className={classes.icon} label="Kochen" icon={<RestaurantIcon/>} value={'aboutme'} />
+                        <BottomNavigationAction className={classes.icon} label="Kochen" icon={<RestaurantIcon/>} value={'cooking'} />
                         <BottomNavigationAction className={classes.icon} label="Cocktails" icon={<LocalBarIcon/>} value={'cocktails'}/>
-                        {/*<BottomNavigationAction className={classes.icon} label="Eindrücke" icon={<MenuBookIcon/>} value={'insight'}/>*/}
-                        {/*<BottomNavigationAction className={classes.icon} label="Kontakt" icon={<MailIcon/>} value={'contact'}/>*/}
                     </BottomNavigation>
                 </div>
-            )
+            );
 }

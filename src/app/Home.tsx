@@ -1,7 +1,8 @@
-import * as React from "react";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import '../contact/Contact.tsx';
-import '../impressions/InsightPics.tsx';
+import * as React from "react"
+import makeStyles from "@material-ui/core/styles/makeStyles"
+import '../contact/Contact.tsx'
+import '../impressions/InsightPics.tsx'
+import {Link} from "@material-ui/core"
 
 const useStyles = makeStyles({
     root:{
@@ -24,12 +25,15 @@ export function Home(){
             <div>
                 <p>Hinweis: Dies ist eine Website in Entwicklung.</p>
                 <div>
-                    <a href="../impressions/InsightPics.tsx"> Eindrücke
+                    {/*<a href="../impressions/InsightPics.tsx"> Eindrücke
                     <img src="potato.PNG" alt="impressions"/>
-                    </a>
+                    </a>*/}
                 </div>
-               <div>
-                   <a href="../contact/Contact.tsx"> Kontaktformular</a>
+            <div>
+                <Link href="recipecollection/Baking">
+                    <a>Backen</a>
+                </Link>
+
                </div>
             </div>
 </div>

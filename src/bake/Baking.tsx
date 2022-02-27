@@ -52,8 +52,6 @@ export function Baking(){
                     <ul>2 kl.  Eier</ul>
                     <ul>Zubereitung:</ul>
                 </Table>
-
-
             </Card>
         </div>
         </div>
