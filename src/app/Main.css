@@ -2,3 +2,6 @@
 .MuiBottomNavigationAction-root.Mui-selected {
     color: lightgrey;
 }
+.MuiBottomNavigationAction-root {
+    color: lightgrey;
+}

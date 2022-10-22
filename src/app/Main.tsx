@@ -16,8 +16,7 @@ const useStyles = makeStyles({
         width: '100vw',
         position: 'fixed',
         bottom: 0,
-        left: 0,
-        backgroundColor: '#1c8c6b'
+        left: 0
     },
     icon: {
         color: 'white',

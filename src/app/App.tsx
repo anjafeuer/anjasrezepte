@@ -25,9 +25,14 @@ const useStyles = makeStyles((theme: Theme) => ({
             width: '100vw',
             height: '100vh',
             marginTop: 100,
-            gridTemplateColumns: '1fr',
+            gridTemplateRows: 'auto 1fr auto',
             justifyItems: 'center',
             fontFamily: 'Helvetica',
+        },
+    bottomNav: {
+        width: '100vw',
+        position: 'fixed',
+        bottom: 0,
         },
     }))
 
