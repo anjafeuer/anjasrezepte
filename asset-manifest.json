@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/recipecollection/static/css/main.6af69cbd.chunk.css",
-    "main.js": "/recipecollection/static/js/main.997d3aaa.chunk.js",
-    "main.js.map": "/recipecollection/static/js/main.997d3aaa.chunk.js.map",
+    "main.css": "/recipecollection/static/css/main.8b5f09cd.chunk.css",
+    "main.js": "/recipecollection/static/js/main.dff2100d.chunk.js",
+    "main.js.map": "/recipecollection/static/js/main.dff2100d.chunk.js.map",
     "runtime-main.js": "/recipecollection/static/js/runtime-main.36b188fb.js",
     "runtime-main.js.map": "/recipecollection/static/js/runtime-main.36b188fb.js.map",
-    "static/js/2.7e56dbf1.chunk.js": "/recipecollection/static/js/2.7e56dbf1.chunk.js",
-    "static/js/2.7e56dbf1.chunk.js.map": "/recipecollection/static/js/2.7e56dbf1.chunk.js.map",
+    "static/js/2.66d0fd4b.chunk.js": "/recipecollection/static/js/2.66d0fd4b.chunk.js",
+    "static/js/2.66d0fd4b.chunk.js.map": "/recipecollection/static/js/2.66d0fd4b.chunk.js.map",
     "index.html": "/recipecollection/index.html",
-    "static/css/main.6af69cbd.chunk.css.map": "/recipecollection/static/css/main.6af69cbd.chunk.css.map",
-    "static/js/2.7e56dbf1.chunk.js.LICENSE.txt": "/recipecollection/static/js/2.7e56dbf1.chunk.js.LICENSE.txt"
+    "static/css/main.8b5f09cd.chunk.css.map": "/recipecollection/static/css/main.8b5f09cd.chunk.css.map",
+    "static/js/2.66d0fd4b.chunk.js.LICENSE.txt": "/recipecollection/static/js/2.66d0fd4b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.36b188fb.js",
-    "static/js/2.7e56dbf1.chunk.js",
-    "static/css/main.6af69cbd.chunk.css",
-    "static/js/main.997d3aaa.chunk.js"
+    "static/js/2.66d0fd4b.chunk.js",
+    "static/css/main.8b5f09cd.chunk.css",
+    "static/js/main.dff2100d.chunk.js"
   ]
 }
